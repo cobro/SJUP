@@ -10,6 +10,8 @@ public class WaterPhysics : MonoBehaviour {
     public Rigidbody2D ballRB;
     public float waterDrag;
 
+    public static GameObject lastTouch;
+
 
 	
 	void Start () {
@@ -30,4 +32,17 @@ public class WaterPhysics : MonoBehaviour {
             ballRB.drag = 0f;
             }
         }
-}
+    private void OnCollisionEnter2D(Collision2D collision)
+        {
+        if (collision.gameObject.tag == "Player1")
+            {
+            lastTouch = collision.gameObject;
+            Debug.Log(lastTouch.name + " touched");
+            }
+        else if (collision.gameObject.tag == "Player2")
+            {
+            lastTouch = collision.gameObject;
+            Debug.Log(lastTouch.name + " touched");
+            }
+        }
+    }
