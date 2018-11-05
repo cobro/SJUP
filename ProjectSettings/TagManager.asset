@@ -6,12 +6,7 @@ TagManager:
   tags:
   - Player2
   - Player1
-<<<<<<< HEAD
-  - Player3
-  - Player4
-=======
   - Water
->>>>>>> 295f972d80998d1bbd15fb710e5e80b89f7ae8b7
   layers:
   - Default
   - TransparentFX
