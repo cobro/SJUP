@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 199712071870515772}
   - component: {fileID: 198430168321551270}
   m_Layer: 0
-  m_Name: boobles
+  m_Name: bobbles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,9 +86,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
-  m_Mass: 2
-  m_LinearDrag: 0.65
-  m_AngularDrag: 0.65
+  m_Mass: 3
+  m_LinearDrag: 0.8
+  m_AngularDrag: 0.8
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17, y: 1.15}
+  m_Offset: {x: 0.17, y: 0.62}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -118,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.72, y: 2.35}
+  m_Size: {x: 1.72, y: 3.79}
   m_EdgeRadius: 0
 --- !u!114 &114069228799414554
 MonoBehaviour:
@@ -1039,21 +1039,39 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 1
+          value: 0.05405295
+          inSlope: 8.562673
+          outSlope: 8.562673
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
+          outWeight: 0.2394326
+        - serializedVersion: 3
+          time: 0.22410706
+          value: 0.5583781
+          inSlope: -0.3801303
+          outSlope: -0.3801303
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.8694004
+          outWeight: 0.3436757
+        - serializedVersion: 3
+          time: 0.8778438
+          value: 0.618668
+          inSlope: -0.5362237
+          outSlope: -0.5362237
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.43247047
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 0
+          value: 0
+          inSlope: -2.7704701
+          outSlope: -2.7704701
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.068622984
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1188,7 +1206,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    separateAxes: 1
+    separateAxes: 0
   RotationModule:
     enabled: 0
     x:
@@ -2674,7 +2692,7 @@ ParticleSystem:
     strengthY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2727,7 +2745,7 @@ ParticleSystem:
     strengthZ:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2777,7 +2795,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    separateAxes: 0
+    separateAxes: 1
     frequency: 0.5
     damping: 1
     octaves: 1
@@ -3619,7 +3637,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4774,7 +4792,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9e9f79c16ff8e45c49a66f44ac0d10b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2190d4be4386042e38f65f1db834a412, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
