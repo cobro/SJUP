@@ -7,6 +7,9 @@ TagManager:
   - Player2
   - Player1
   - Water
+  - Player3
+  - Player4
+  - Mine
   layers:
   - Default
   - TransparentFX

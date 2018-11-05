@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour {
 
@@ -14,11 +15,14 @@ public class Goal : MonoBehaviour {
     public float p1Score;
     public float p2Score;
 
+    public GameObject gameOverObj;
+    public UnityEngine.UI.Text gameOverText;
 
 	void Start () {
         ballCollider = ball.GetComponent("CircleCollider2D") as CircleCollider2D;
         p1UIText = p1UIElement.GetComponent("Text") as UnityEngine.UI.Text;
         p2UIText = p2UIElement.GetComponent("Text") as UnityEngine.UI.Text;
+        gameOverText = gameOverObj.GetComponent("Text") as UnityEngine.UI.Text;
         }
 
     void Update () {
@@ -49,4 +53,34 @@ public class Goal : MonoBehaviour {
 
         ball.transform.position = new Vector3(-4f, 5.4f);
         }
+
+    public string FindWinner()
+    {
+        string winner;
+        if (p1Score > p2Score)
+        {
+            winner = "Player 1";
+        }
+        else if (p1Score < p2Score)
+        {
+            winner = "Player 2";
+        }
+        else
+        {
+            winner = "Noone";
+        }
+        return winner + " Wins!";
+    }
+
+    public void GameOver()
+    {
+        gameOverObj.SetActive(true);
+        gameOverText.text = FindWinner();
+        Time.timeScale = 0;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

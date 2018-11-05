@@ -118,7 +118,7 @@ public class CameraController : MonoBehaviour {
 
     public void changeAttribute(GameObject assObj1, GameObject assObj2, float newDistance)
         {
-        distances.Find(p => p.target1 == assObj1 & p.target2 == assObj2).distance = newDistance;
+        distances.Find(p => p.target1 == assObj1 && p.target2 == assObj2).distance = newDistance;
         }
 
     
