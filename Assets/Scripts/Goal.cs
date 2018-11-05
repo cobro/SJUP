@@ -22,7 +22,7 @@ public class Goal : MonoBehaviour {
         ballCollider = ball.GetComponent("CircleCollider2D") as CircleCollider2D;
         p1UIText = p1UIElement.GetComponent("Text") as UnityEngine.UI.Text;
         p2UIText = p2UIElement.GetComponent("Text") as UnityEngine.UI.Text;
-        gameOverText = gameOverObj.GetComponent("Text") as UnityEngine.UI.Text;
+        //gameOverText = gameOverObj.GetComponent("Text") as UnityEngine.UI.Text;
         }
 
     void Update () {

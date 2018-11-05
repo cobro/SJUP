@@ -23,13 +23,15 @@ public class MineScript : MonoBehaviour {
         if (mineCollider.IsTouching(p1Collider) == true)
         {
             player1.SendMessage("Explosion");
-            Destroy(this);
+            Debug.Log("Mine Exploded");
+            Destroy(gameObject);
         }
 
         if (mineCollider.IsTouching(p2Collider) == true)
         {
             player2.SendMessage("Explosion");
-            Destroy(this);
+            Debug.Log("Mine Exploded");
+            Destroy(gameObject);
         }
     }
 }
