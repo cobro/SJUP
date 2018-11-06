@@ -6,6 +6,7 @@ public class HealthScript : MonoBehaviour {
 
     public int playerHealth = 3;
     public GameObject goal;
+
     public GameObject health;
 	
 	void Start () {

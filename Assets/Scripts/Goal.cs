@@ -51,7 +51,7 @@ public class Goal : MonoBehaviour {
             p2Score++;
             }
 
-        ball.transform.position = new Vector3(-4f, 5.4f);
+        ball.transform.position = new Vector3(0.9f, -3f);
         }
 
     public string FindWinner()

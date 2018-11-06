@@ -21,6 +21,6 @@ public class MineSpawner : MonoBehaviour {
 
     public void SpawnMine()
     {
-        Instantiate(mine, )
+        Instantiate(mine);
     }
 }
